@@ -17,7 +17,6 @@ student_learns = " ".join(student["learns"])
 # Выводим информацию о знаниях и изучаемых студента
 print(f"Студент {student_name}")
 print(f"Знает {student_skills}")
-print(f"Хочет изучить {student_skills}")
 
 # Получаем данные про профессию
 print("Выберите специальность для оценки студента Jane Snake")
@@ -31,12 +30,13 @@ if not profession:
 # Получаем сопоставление
 fitness = utils.check_fitness(student, profession)
 
+# Вытаскиваем данные из полученного словаря
 fit_percent = fitness["fit_percent"]
 has = fitness["has"]
 lacks = fitness["lacks"]
 useless = fitness["useless"]
 
+# Выводим результаты
 print(f"Пригодность {fit_percent}%")
 print(f"Студент знает {' '.join(has)}")
 print(f"Студент не знает {' '.join(lacks)}")
-print(f"Студент знает бесполезные для специальности {' '.join(useless)}")

@@ -36,6 +36,6 @@ else:
 
     print(
         f'Вот и все! '
-        f'Вы ответили на {answered_questions} {ending} из {total_questions} верно '
+        f'Вы ответили на {answered_questions} вопросов из {total_questions} верно '
         f'и заработали {user_score} очков'
     )

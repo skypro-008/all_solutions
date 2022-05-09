@@ -28,7 +28,7 @@ def posts_single(post_id):
 
 @main_blueprint.route('/search')
 def posts_search():
-    s = request.args.get("s")
+    s = request.args.get("s"," ")
     posts = posts_dao.search(s)
     posts_count = len(posts)
     return render_template("search.html", posts=posts, posts_count=posts_count,query=s)

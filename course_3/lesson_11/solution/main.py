@@ -6,7 +6,7 @@ from config import PATH, LIMIT
 app = Flask(__name__)
 candidate_manager = CandidateManager(PATH)
 
-
+str
 @app.route('/')
 def page_index():
     """ Главная страничка со всеми кандидатами """

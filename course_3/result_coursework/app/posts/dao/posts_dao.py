@@ -29,6 +29,10 @@ class PostsDAO:
         возвращает список словарей по вхождению query
         """
         posts = self.get_all()
+
+        if query in ["", " "]:
+            return []
+
         matching_posts = []
 
         query_lower = query.lower()

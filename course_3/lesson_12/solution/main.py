@@ -9,6 +9,9 @@ UPLOAD_FOLDER = "uploads/images"
 
 app = Flask(__name__)
 
+app.config["POST_PATH"] = "posts.json"
+app.config["POST_PATH"] = "uploads/images"
+
 app.register_blueprint(main_blueprint)
 app.register_blueprint(loader_blueprint)
 

@@ -73,3 +73,23 @@ INFO:root:Выполняется поиск
 INFO:werkzeug:127.0.0.1 - - [24/Mar/2022 20:17:53] "GET /search?s=оки HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [24/Mar/2022 20:17:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [24/Mar/2022 20:17:55] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dev/Documents/skypro/all_solutions/course_3/lesson_12/solution/main/views.py", line 13, in main_page
+    print(app.config["POST_PATH"])
+NameError: name 'app' is not defined
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2022 21:46:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2022 21:48:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2022 21:48:13] "GET /static/style.css HTTP/1.1" 200 -

@@ -9,7 +9,7 @@ if not student:
     print("У нас нет такого студента")
     quit()
 
-# Собираем информацию о знаниях и изучаемых студента
+# Собираем информацию о знаниях и изучаемых студентах
 student_name = student["full_name"]
 student_skills = " ".join(student["skills"])
 student_learns = " ".join(student["learns"])
@@ -26,6 +26,10 @@ profession = utils.get_profession_by_title(profession_title)
 if not profession:
     print("У нас нет такой профессии")
     quit()
+#
+# if not profession:
+#     print("У нас нет такой профессии")
+#     quit()
 
 # Получаем сопоставление
 fitness = utils.check_fitness(student, profession)
@@ -34,7 +38,6 @@ fitness = utils.check_fitness(student, profession)
 fit_percent = fitness["fit_percent"]
 has = fitness["has"]
 lacks = fitness["lacks"]
-useless = fitness["useless"]
 
 # Выводим результаты
 print(f"Пригодность {fit_percent}%")

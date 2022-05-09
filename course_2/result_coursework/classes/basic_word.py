@@ -8,8 +8,7 @@ class BasicWord:
     def check_word(self, ent_word):
         if ent_word in self.word_species:
             return True
-        else:
-            return False
+        return False
 
     def count_species(self):
         return len(self.word_species)

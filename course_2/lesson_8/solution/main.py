@@ -1,6 +1,6 @@
 from utils import load_questions, build_statistics
 
-if __name__ == '__main__':
+def main():
 
     # Получаем список всех вопросов
     questions = load_questions()
@@ -31,3 +31,7 @@ if __name__ == '__main__':
 
     # Выводим финальную статистику
     print(build_statistics(questions))
+
+
+if __name__ == '__main__':
+    main()

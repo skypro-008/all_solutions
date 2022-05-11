@@ -50,5 +50,4 @@ def check_fitness(student, profession):
         "fit_percent": has_percent,
     }
 
-    return has_skills, lack_skills, has_percent
 

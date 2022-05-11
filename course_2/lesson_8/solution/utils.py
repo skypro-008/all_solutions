@@ -15,6 +15,7 @@ def load_questions(filename='data/questions.json'):
 
     # Превращаем список словарей в список объектов класса Question
     for raw_question in raw_questions:
+
         another_question = Question(
             raw_question.get("q"),
             int(raw_question.get("d")),

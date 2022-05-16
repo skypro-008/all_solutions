@@ -15,7 +15,6 @@ if user_input != 'ready':
     print("Кажется, вы не хотите играть. Очень жаль.")
 else:
     for question_index in range(total_questions):
-
         question = questions[question_index]
         answer = answers[question_index]
         print(question)

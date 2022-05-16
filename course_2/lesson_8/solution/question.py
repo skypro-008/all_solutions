@@ -10,6 +10,7 @@ class Question:
         self.user_answer = None
         self.score = difficulty * 10
 
+
     def __repr__(self):
         return f"\
         \nВопрос: {self.question}\
